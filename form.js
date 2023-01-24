@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("aggiungi_utente")
     .addEventListener("click", aggiungiUtente);
-
+  event.preventDefault();
   function aggiungiUtente() {
     console.log("Button clicked");
     var nome = document.getElementById("nome").value;
